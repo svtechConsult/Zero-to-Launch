@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Startup Founder Self-Assessment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        form {
+            display: grid;
+            gap: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .likert-scale {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-top: 5px;
+        }
+        .likert-scale label {
+            text-align: center;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Comprehensive Startup Founder Self-Assessment</h1>
+        <form id="detailedFounderAssessment">
+            <h2>1. Personal Information</h2>
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="120" required>
+            </div>
+            <div>
+                <label for="education">Highest Level of Education:</label>
+                <select id="education" name="education" required>
+                    <option value="">Select an option</option>
+                    <option value="highSchool">High School</option>
+                    <option value="bachelors">Bachelor's Degree</option>
+                    <option value="masters">Master's Degree</option>
+                    <option value="phd">Ph.D. or Doctorate</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <h2>2. Professional Background</h2>
+            <div>
+                <label for="yearsExperience">Years of Professional Experience:</label>
+                <input type="number" id="yearsExperience" name="yearsExperience" min="0" max="50" required>
+            </div>
+            <div>
+                <label for="industryExperience">Relevant Industry Experience:</label>
+                <textarea id="industryExperience" name="industryExperience" rows="3" required></textarea>
+            </div>
+            <div>
+                <label for="entrepreneurialExperience">Previous Entrepreneurial Experience:</label>
+                <textarea id="entrepreneurialExperience" name="entrepreneurialExperience" rows="3" required></textarea>
+            </div>
+
+            <h2>3. Business Idea</h2>
+            <div>
+                <label for="businessIdea">Briefly describe your business idea:</label>
+                <textarea id="businessIdea" name="businessIdea" rows="3" required></textarea>
+            </div>
+            <div>
+                <label for="problemSolved">What problem does your business idea solve?</label>
+                <textarea id="problemSolved" name="problemSolved" rows="3" required></textarea>
+            </div>
+            <div>
+                <label for="targetMarket">Who is your target market?</label>
+                <textarea id="targetMarket" name="targetMarket" rows="3" required></textarea>
+            </div>
+
+            <h2>4. Skills Assessment</h2>
+            <p>Rate your skills in the following areas (1-5, 1 being novice and 5 being expert):</p>
+            <div>
+                <label for="businessStrategy">Business Strategy:</label>
+                <div class="likert-scale">
+                    <label><input type="radio" name="businessStrategy" value="1" required> 1</label>
+                    <label><input type="radio" name="businessStrategy" value="2"> 2</label>
+                    <label><input type="radio" name="businessStrategy" value="3"> 3</label>
+                    <label><input type="radio" name="businessStrategy" value="4"> 4</label>
+                    <label><input type="radio" name="businessStrategy" value="5"> 5</label>
+                </div>
+            </div>
+            <div>
+                <label for="financialManagement">Financial Management:</label>
+                <div class="likert-scale">
+                    <label><input type="radio" name="financialManagement" value="1" required> 1</label>
+                    <label><input type="radio" name="financialManagement" value="2"> 2</label>
+                    <label><input type="radio" name="financialManagement" value="3"> 3</label>
+                    <label><input type="radio" name="financialManagement" value="4"> 4</label>
+                    <label><input type="radio" name="financialManagement" value="5"> 5</label>
+                </div>
+            </div>
+            <div>
+                <label for="marketing">Marketing and Sales:</label>
+                <div class="likert-scale">
+                    <label><input type="radio" name="marketing" value="1" required> 1</label>
+                    <label><input type="radio" name="marketing" value="2"> 2</label>
+                    <label><input type="radio" name="marketing" value="3"> 3</label>
+                    <label><input type="radio" name="marketing" value="4"> 4</label>
+                    <label><input type="radio" name="marketing" value="5"> 5</label>
+                </div>
+            </div>
+            <div>
+                <label for="productDevelopment">Product Development:</label>
+                <div class="likert-scale">
+                    <label><input type="radio" name="productDevelopment" value="1" required> 1</label>
+                    <label><input type="radio" name="productDevelopment" value="2"> 2</label>
+                    <label><input type="radio" name="productDevelopment" value="3"> 3</label>
+                    <label><input type="radio" name="productDevelopment" value="4"> 4</label>
+                    <label><input type="radio" name="productDevelopment" value="5"> 5</label>
+                </div>
+            </div>
+            <div>
+                <label for="leadershipManagement">Leadership and Team Management:</label>
+                <div class="likert-scale">
+                    <label><input type="radio" name="leadershipManagement" value="1" required> 1</label>
+                    <label><input type="radio" name="leadershipManagement" value="2"> 2</label>
+                    <label><input type="radio" name="leadershipManagement" value="3"> 3</label>
+                    <label><input type="radio" name="leadershipManagement" value="4"> 4</label>
+                    <label><input type="radio" name="leadershipManagement" value="5"> 5</label>
+                </div>
+            </div>
+
+            <h2>5. Personal Traits</h2>
+            <div>
+                <label for="riskTolerance">How would you describe your risk tolerance?</label>
+                <select id="riskTolerance" name="riskTolerance" required>
+                    <option value="">Select an option</option>
+                    <option value="veryLow">Very Low - I avoid risks at all costs</option>
+                    <option value="low">Low - I prefer stability and minimal risk</option>
+                    <option value="moderate">Moderate - I can handle some risk</option>
+                    <option value="high">High - I'm comfortable with significant risk</option>
+                    <option value="veryHigh">Very High - I thrive on taking risks</option>
+                </select>
+            </div>
+            <div>
+                <label for="workEthic">How would you describe your work ethic?</label>
+                <textarea id="workEthic" name="workEthic" rows="3" required></textarea>
+            </div>
+            <div>
+                <label for="stressManagement">How do you handle stress and pressure?</label>
+                <textarea id="stressManagement" name="stressManagement" rows="3" required></textarea>
+            </div>
+
+            <h2>6. Motivation and Goals</h2>
+            <div>
+                <label for="motivation">What is your primary motivation for starting a business?</label>
+                <textarea id="motivation" name="motivation" rows="3" required></textarea>
+            </div>
+            <div>
+                <label for="shortTermGoals">What are your short-term goals (1-2 years) for your startup?</label>
+                <textarea id="shortTermGoals" name="shortTermGoals" rows="3" required></textarea>
+            </div>
+            <div>
+                <label for="longTermVision">What is your long-term vision (5+ years) for your startup?</label>
+                <textarea id="longTermVision" name="longTermVision" rows="3" required></textarea>
+            </div>
+
+            <h2>7. Resources and Support</h2>
+            <div>
+                <label for="financialResources">What financial resources do you have available for your startup?</label>
+                <textarea id="financialResources" name="financialResources" rows="3" required></textarea>
+            </div>
+            <div>
+                <label for="network">Describe your professional network and potential mentors:</label>
+                <textarea id="network" name="network" rows="3" required></textarea>
+            </div>
+            <div>
+                <label for="timeCommitment">How much time can you commit to your startup weekly?</label>
+                <input type="number" id="timeCommitment" name="timeCommitment" min="1" max="168" required> hours
+            </div>
+
+            <h2>8. Challenges and Problem-Solving</h2>
+            <div>
+                <label for="biggestChallenge">What do you anticipate will be your biggest challenge in starting this business?</label>
+                <textarea id="biggestChallenge" name="biggestChallenge" rows="3" required></textarea>
+            </div>
+            <div>
+                <label for="problemSolvingApproach">Describe your approach to problem-solving:</label>
+                <textarea id="problemSolvingApproach" name="problemSolvingApproach" rows="3" required></textarea>
+            </div>
+
+            <h2>9. Learning and Adaptability</h2>
+            <div>
+                <label for="learningStyle">How do you prefer to learn new skills?</label>
+                <select id="learningStyle" name="learningStyle" required>
+                    <option value="">Select an option</option>
+                    <option value="selfStudy">Self-study (books, online courses)</option>
+                    <option value="formalEducation">Formal education (classes, workshops)</option>
+                    <option value="handson">Hands-on experience</option>
+                    <option value="mentorship">Mentorship and coaching</option>
+                </select>
+            </div>
+            <div>
+                <label for="adaptToChange">How do you adapt to change and uncertainty?</label>
+                <textarea id="adaptToChange" name="adaptToChange" rows="3" required></textarea>
+            </div>
+
+            <input type="submit" value="Submit Assessment">
+        </form>
+    </div>
+</body>
+</html>
